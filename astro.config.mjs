@@ -5,6 +5,6 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://nadundeshitha.github.io',
+	site: 'https://nadundeshitha.top',
 	integrations: [mdx(), sitemap()],
 });
