@@ -11,6 +11,23 @@
 body {
   scroll-behavior: smooth;
 }
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('assets/bg.jpg'); /* your image path */
+  background-size: cover;         /* scales image to cover entire area */
+  background-position: center;    /* centers the image */
+  background-repeat: no-repeat;   /* no tiling */
+  background-attachment: fixed;   /* optional: keeps image fixed on scroll */
+}
+
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll; /* prevent scroll issues on mobile */
+    background-size: cover;        /* still covers screen */
+    background-position: center top; /* adjust position for mobile */
+  }
+}
 
 header {
   position: fixed;
